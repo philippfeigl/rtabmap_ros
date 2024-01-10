@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!-- -->
+<launch>
+   <param name="use_sim_time" value="true" />
+
+   <node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="0 0 0 0 0 0 1 base_footprint base_link 100" />
+   <node pkg="tf" type="static_transform_publisher" name="link2_broadcaster" args="0.0005 0.1296 0.181 0 0 0 1 base_link base_imu_frame 100" />
+   <node pkg="tf" type="static_transform_publisher" name="link3_broadcaster" args="0.1675 0 0.1844 0 0 0 1 base_link base_range_sensor_link 100" />
+   <node pkg="tf" type="static_transform_publisher" name="link4_broadcaster" args="0.0195 0 0.061 -0.5 0.499999999998 -0.5 0.500000000002 head_tilt_link head_center_camera_frame 100" />
+   <node pkg="tf" type="static_transform_publisher" name="link5_broadcaster" args="0 0 0 0.5 -0.5 0.499999999998 0.500000000002 head_center_camera_frame head_center_camera_gazebo_frame 100" />
+   <node pkg="tf" type="static_transform_publisher" name="link6_broadcaster" args="0 0 0 0.5 -0.5 0.499999999998 0.500000000002 head_l_stereo_camera_link head_l_stereo_camera_gazebo_frame 100" />
+   <node pkg="tf" type="static_transform_publisher" name="link7_broadcaster" args="0.02 0.07 0.061 -0.5 0.499999999998 -0.5 0.500000000002 head_tilt_link head_l_stereo_camera_link 100" />
+   <node pkg="tf" type="static_transform_publisher" name="link8_broadcaster" args="0 0 0 0.5 -0.5 0.499999999998 0.500000000002 head_r_stereo_camera_link head_r_stereo_camera_gazebo_frame 100" />
+   <node pkg="tf" type="static_transform_publisher" name="link9_broadcaster" args="0.02 -0.07 0.061 -0.5 0.499999999998 -0.5 0.500000000002 head_tilt_link head_r_stereo_camera_link 100" />
+   <node pkg="tf" type="static_transform_publisher" name="link10_broadcaster" args="0 0 0 0.5 -0.5 0.499999999998 0.500000000002 head_rgbd_sensor_link head_rgbd_sensor_gazebo_frame 100" />
+   <node pkg="tf" type="static_transform_publisher" name="link11_broadcaster" args="-0.079796 0.022 0.215172 -0.5 0.499999999998 -0.5 0.500000000002 head_tilt_link head_rgbd_sensor_link 100" />
+   <node pkg="tf" type="static_transform_publisher" name="link12_broadcaster" args="0.00048218996642 -0.000175955594128 -0.0179545617987 0.0355151146366 -0.0020739222645 0.000353946026788 0.999366924708 head_l_stereo_camera_link head_l_stereo_camera_frame 100" />
+   <node pkg="tf" type="static_transform_publisher" name="link13_broadcaster" args="0.0494502161673 -0.153948942144 -0.0985084144161 0.0033080976527 0.00267150551733 -0.0069939805842 0.999966501331 head_l_stereo_camera_frame head_rgbd_sensor_rgb_frame 100" />
+</launch>
